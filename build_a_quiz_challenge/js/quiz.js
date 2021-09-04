@@ -2,11 +2,15 @@
 
 
 const quiz = [
-  ['Who is Skys dog?', 'Who is Cynthias dog?', 'Who are Tricia and Justins dogs?']
-  ['Zara', 'Max', 'Denver and Tucker']
+  ['Who is Skys dog?', 'Zara']
+  ['Who is Cynthias dog?', 'Max']
+  ['Who are Tricia and Justins dogs?', 'Denver and Tucker']
 ]
 
+
 // 2. Store the number of questions answered correctly
+
+var questionsCorrect = ''
 
 
 /* 
