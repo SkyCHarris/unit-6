@@ -15,3 +15,4 @@ const fruit = [
     'pineapple',
     'strawberry'
 ]
+
