@@ -6,7 +6,7 @@ const cynthiaQuiz = [
     ['What are we gonna do about it?', 'Wife it up.']
 ]
 
-
+const score;
 
 // If else to 
 
@@ -28,12 +28,14 @@ for ( let i = 0; i < cynthiaQuiz.length; i++) {
 }
 
 
-// function correctAnswers() {
-//     for (let i = 0; i < cynthiaQuiz.length; i++) {
-//         const prettyQuestions = prompt(i[0]);
+//     for ( let i = 0; i < cynthiaQuiz.length; i++ ) {
+//         for ( let k = 0; k < cynthiaQuiz[0].length; k++) {
+//             console.log(k);
+//         }
 //     }
-    
 // }
+
+
 
 
 // Use loop to cycle through each question, 
