@@ -1,41 +1,63 @@
 
-// Array
+// #1
 const cynthiaQuiz = [
     ['Who is the prettiest girl in the world?', 'Cynthia.'],
     ['What makes her the prettiest girl in the world?', 'Everything.'],
     ['What are we gonna do about it?', 'Wife it up.']
 ]
 
-const score;
-
-// If else to 
-
-// const whoPretty = prompt("Who's the prettiest girl in the world?");
-// const whyPretty = prompt("What makes her the prettiest girl in the world?")
-// const whatDo = prompt("What are we gonna do about it?")
+// #2
+let score = 0;
 
 
+// #3
 
-for ( let i = 0; i < cynthiaQuiz.length; i++) {
-    let score = 0;
-    const whoPretty = prompt(cynthiaQuiz[0][0]);
-    if ( whoPretty == 'Cynthia') {
+// for ( let i = 0; i < cynthiaQuiz.length; i++ ) {
+//     const whoPretty = prompt(cynthiaQuiz[0][0]);
+//     if ( whoPretty == "Cynthia" ) {
+//         score++;
+//     } else {
+//         score;
+//     }
+//     const whyPretty = prompt(cynthiaQuiz[1][0]);
+//     if ( whyPretty == "Everything") {
+//         score++;
+//     } else {
+//         score;
+//     }
+//     console.log(score);
+// }
+
+
+for ( let i = 0; i < cynthiaQuiz.length;i++ ) {
+    let prettyQuestions = cynthiaQuiz[i][0];
+    let prettyAnswers = cynthiaQuiz[i][1];
+    let response = prompt(prettyQuestions);
+
+    if ( response == prettyAnswers ) {
         score++;
     } else {
         score;
     }
-    console.log(score);
 }
 
 
-//     for ( let i = 0; i < cynthiaQuiz.length; i++ ) {
-//         for ( let k = 0; k < cynthiaQuiz[0].length; k++) {
-//             console.log(k);
-//         }
+
+
+
+
+
+
+// for ( let i = 0; i < cynthiaQuiz.length; i++) {
+//     let score = 0;
+//     const whoPretty = prompt(cynthiaQuiz[0][0]);
+//     if ( whoPretty == 'Cynthia') {
+//         score++;
+//     } else {
+//         score;
 //     }
+//     console.log(score);
 // }
-
-
 
 
 // Use loop to cycle through each question, 
