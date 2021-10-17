@@ -6,6 +6,10 @@ const cynthiaQuiz = [
     ['What are we gonna do about it?', 'Wife it up']
 ]
 
+
+const correctQuestions = [];
+const incorrectQuestions = [];
+
 let score = 0;
 
 
@@ -30,8 +34,18 @@ let html = `
 document.querySelector('main').innerHTML = html;
 
 
-const correctQuestions = [];
-const incorrectQuestions = [];
+let questionsList = `
+    <h1>You got these questions right:</h1>
+    <ol>
+        <li>${correctQuestions}</li>
+    </ol>
+    <h1>You got these questions wrong:</h1>
+    <ol>
+        <li>${incorrectQuestions}</li>
+    </ol>
+`   
+
+document.querySelector('main').innerHTML = questionsList;
 
 
 
