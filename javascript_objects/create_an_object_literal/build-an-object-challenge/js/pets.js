@@ -15,7 +15,7 @@ const pets = [
     type: 'Dog',
     breed: 'dachshund',
     age: 2,
-    photo: 'img/daschund.jpg'
+    photo: 'img/dachshund.jpg'
   },
   { name: 'Goldie',
     type: 'Dog',
@@ -42,22 +42,3 @@ const pets = [
     photo: 'img/tabby.jpg'
   },
 ]
-
-for ( let i = 0; i < pets.length; i++ ) {
-  let pet = pets[i];
-  let name = pets[i].name;
-  let type = pets[i].type;
-  let breed = pets[i].breed;
-  let age = pets[i].age;
-  let photo = pets[i].photo;
-}
-
-
-let HTML = `
-<h2>${name}</h2>
-<h3>${type} | ${breed}</h3>
-<p>${age}</p>
-<img src=${photo} alt=${breed}
-`
-
-document.querySelector('main').innterHTML = HTML;
