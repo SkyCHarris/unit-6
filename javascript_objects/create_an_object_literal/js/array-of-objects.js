@@ -31,8 +31,8 @@ let correctAnswers = 0;
         answered questions increments by 1
 */
 for ( let i = 0; i < questions.length; i++ ) {
-  let question = questions[i][0];
-  let answer = questions[i][1];
+  let question = questions[i].question;
+  let answer = questions[i].answer;
   let response = prompt(question);
   
   if ( response === answer ) {
