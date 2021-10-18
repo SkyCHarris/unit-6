@@ -1,5 +1,4 @@
 
-
 // JavaScript Object
 const person = {
     name: 'Reggie',
