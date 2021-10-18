@@ -12,3 +12,5 @@ const person = {
 
 const personProps = Object.keys(person);
 console.log(personProps);
+
+console.log(Object.keys(person).length);
