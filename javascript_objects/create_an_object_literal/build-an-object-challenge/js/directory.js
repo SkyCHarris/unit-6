@@ -1,5 +1,5 @@
 
-let html = '';
+// let html = '';
 
 // for ( let i = 0; i < pets.length; i++ ) {
 //   let pet = pets[i];
@@ -20,8 +20,10 @@ let html = '';
 
 
 // Practice / Reminder
+let html = '';
+
 for ( let i = 0; i < pets.length; i++ ) {
-  let html = '';
+  let pet = pets[i];
   html += `
   <h2>${pets[i].name}</h2>
   <h3>${pets[i].type} | ${pets[i].breed}</h3>
@@ -29,3 +31,7 @@ for ( let i = 0; i < pets.length; i++ ) {
   <img src=${pets[i].photo}>
   `
 }
+
+console.log(html);
+
+document.querySelector('main').insertAdjacentHTML('beforeend', html);
