@@ -20,6 +20,8 @@
 
 
 // Practice / Reminder
+
+const main = document.querySelector('main');
 let html = '';
 
 for ( let i = 0; i < pets.length; i++ ) {
@@ -34,4 +36,4 @@ for ( let i = 0; i < pets.length; i++ ) {
 
 console.log(html);
 
-document.querySelector('main').insertAdjacentHTML('beforeend', html);
+main.insertAdjacentHTML('beforeend', html);
