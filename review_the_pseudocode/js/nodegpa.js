@@ -1,9 +1,6 @@
 
 
 
-
-
-
 function calculate_gpa(student_grades) {
     let grade_total = 0;
     for ( let i = 0; i < student_grades.length; i++ ) {
@@ -19,5 +16,8 @@ function calculate_gpa(student_grades) {
     return gpa;
 }
 
-print(calculate_gpa.reggie_grades(4, 4, 3, 4));
-print(calculate_gpa.dave_grades(1, 2, 3, 2));
+let reggieGPA = calculate_gpa.reggie_grades;
+let daveGPA = calculate_gpa.dave_grades;
+
+document.write('main').innerHTML = reggieGPA;
+document.write('main').innerHTML = daveGPA;
