@@ -1,6 +1,2 @@
 
-const body = document.body;
-
-body.addEventListener('click', () => {
-    body.innerHTML = '<h1>Hello, world!</h1>';
-});3
+document.getElementById('headline').style.border = 'solid 2px red';
