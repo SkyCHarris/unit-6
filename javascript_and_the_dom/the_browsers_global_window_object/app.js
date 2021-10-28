@@ -4,6 +4,13 @@ const listItems = document.getElementsByTagName('li');
 const highlights = document.getElementsByClassName('highlight');
 
 
+for ( const highlight of highlights) {
+    highlight.style.backgroundColor = 'cornsilk';
+
+    console.log(highlight);
+}
+
+
 for (let i = 0; i < listItems.length; i++) {
     listItems[i].style.color = 'orchid';
 }
