@@ -1,7 +1,7 @@
+const buttonStyling = document.querySelector('.btn-main');
 const headline = document.getElementById('headline');
-const buttonStyling = document.getElementById('btn-main');
-const listItems = document.getElementsByTagName('li');
-const highlights = document.getElementsByClassName('highlight');
+const listItems = document.querySelectorAll('li');
+const highlights = document.querySelectorAll('.highlight');
 
 
 for ( const highlight of highlights) {
