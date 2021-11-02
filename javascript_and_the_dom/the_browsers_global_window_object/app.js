@@ -1,5 +1,4 @@
 const buttonStyling = document.querySelector('.btn-main');
-const headline = document.getElementById('headline');
 // const listItems = document.querySelectorAll('li');
 // const highlights = document.querySelectorAll('.highlight');
 
@@ -16,6 +15,7 @@ const headline = document.getElementById('headline');
 // }
 
 buttonStyling.addEventListener('click', () => {
-    headline.style.border = 'solid 2px red';
-    headline.style.fontSize = '60px';
+    const input = document.querySelector('.input-main');
+    const headline = document.getElementById('headline');
+    headline.textContent = input.value;
 });
