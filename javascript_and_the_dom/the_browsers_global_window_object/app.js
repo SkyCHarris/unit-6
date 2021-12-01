@@ -15,7 +15,9 @@ const buttonStyling = document.querySelector('.btn-main');
 // }
 
 buttonStyling.addEventListener('click', () => {
-    const input = document.querySelector('.input-main');
     const headline = document.getElementById('headline');
+    const input = document.querySelector('.input-main');
+
     headline.textContent = input.value;
+    input.value = '';
 });
