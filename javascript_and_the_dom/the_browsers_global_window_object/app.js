@@ -28,5 +28,10 @@ buttonStyling.addEventListener('click', () => {
 
 btnToggle.addEventListener('click', () => {
     const listContainer = document.querySelector('.list-container');
-    listContainer.style.display = 'none';
+
+    if (listContainer.style.display === 'none') {
+        listContainer.style.display = 'block';
+    } else {
+        listContainer.style.display = 'none';
+    }
 });
