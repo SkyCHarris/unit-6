@@ -30,8 +30,10 @@ btnToggle.addEventListener('click', () => {
     const listContainer = document.querySelector('.list-container');
 
     if (listContainer.style.display === 'none') {
+        btnToggle.textContent = 'Hide List';
         listContainer.style.display = 'block';
     } else {
+        btnToggle.textContent = 'Show List';
         listContainer.style.display = 'none';
     }
 });
