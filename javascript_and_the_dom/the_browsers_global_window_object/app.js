@@ -1,3 +1,6 @@
+
+const btnToggle = document.querySelector('.btn-toggle');
+const btnUpdate = document.querySelector('.btn-main');
 const buttonStyling = document.querySelector('.btn-main');
 // const listItems = document.querySelectorAll('li');
 // const highlights = document.querySelectorAll('.highlight');
@@ -21,4 +24,9 @@ buttonStyling.addEventListener('click', () => {
     headline.className = 'grow';
     headline.textContent = input.value;
     input.value = '';
+});
+
+btnToggle.addEventListener('click', () => {
+    const listContainer = document.querySelector('.list-container');
+    listContainer.style.display = 'none';
 });
