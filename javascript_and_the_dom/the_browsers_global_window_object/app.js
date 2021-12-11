@@ -31,7 +31,7 @@ btnToggle.addEventListener('click', () => {
 
     if (listContainer.style.display === 'none') {
         btnToggle.textContent = 'Hide List';
-        listContainer.style.display = 'block';
+        listContainer.removeAttribute('style');
     } else {
         btnToggle.textContent = 'Show List';
         listContainer.style.display = 'none';
