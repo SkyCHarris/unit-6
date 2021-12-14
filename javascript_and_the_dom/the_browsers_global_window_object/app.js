@@ -5,8 +5,9 @@ const btnCreate = document.querySelector('.btn-main');
 
 buttonStyling.addEventListener('click', () => {
     const input = document.querySelector('.input-main');
-    
-    
+    const item = document.createElement('li');
+
+    item.textContent = input.Value;
     input.value = '';
 });
 
