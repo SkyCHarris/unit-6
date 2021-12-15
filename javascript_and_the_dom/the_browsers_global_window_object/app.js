@@ -1,20 +1,21 @@
 
-const btnToggle = document.querySelector('.btn-toggle');
 const btnCreate = document.querySelector('.btn-main');
+const btnToggle = document.querySelector('.btn-toggle');
 
 
-buttonStyling.addEventListener('click', () => {
+
+btnCreate.addEventListener('click', () => {
     const input = document.querySelector('.input-main');
     const list = document.querySelector('ul');
     const item = document.createElement('li');
 
-    item.textContent = input.Value;
+    item.textContent = input.value;
     input.value = '';
     list.append(item);
 });
 
 
-btnCreate.addEventListener('click', () => {
+btnToggle.addEventListener('click', () => {
     const listContainer = document.querySelector('.list-container');
 
     if (listContainer.style.display === 'none') {
