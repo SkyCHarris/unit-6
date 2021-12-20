@@ -29,7 +29,8 @@ for (let i = 0; i < cards.length; i++) {
 // 4: Select only the first <ul> in the document.
 //    Assign it to a variable named `ul`.
 
-// ul.style.border = "2px solid indigo";
+const ul = getElementsByTagName('ul')[0];
+ul.style.border = "2px solid indigo";
 
 // 5: Select only the second element with the class '.container'.
 //    Assign it to a variable named `container`.
