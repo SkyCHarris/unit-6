@@ -1,6 +1,9 @@
 // 1: Select the element with the ID 'about'. 
 //    Store the element in the variable `about`.
-const about;
+
+
+
+const about = document.getElementById('about');
 about.style.border = "2px solid firebrick";
 
 // 2: Select all the <h2> elements in the document.
