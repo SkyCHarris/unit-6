@@ -29,15 +29,20 @@ for (let i = 0; i < cards.length; i++) {
 // 4: Select only the first <ul> in the document.
 //    Assign it to a variable named `ul`.
 
-const ul = getElementsByTagName('ul')[0];
+const ul = document.getElementsByTagName('ul')[0];
 ul.style.border = "2px solid indigo";
 
 // 5: Select only the second element with the class '.container'.
 //    Assign it to a variable named `container`.
 
-// container.style.backgroundColor = "royalblue";
+const container = document.getElementsByClassName('container')[1];
+container.style.backgroundColor = "royalblue";
 
 // 6: Select all <a> elements that have a 'title' attribute. 
 //    Set their color value to the color of your choice.
 
+const a = document.getElementsByTagName('a');
 
+for (let i = 0; i < a.length; i++) {
+    a[i].style.color = 'pink';
+}
