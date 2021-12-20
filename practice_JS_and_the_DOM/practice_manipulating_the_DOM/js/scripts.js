@@ -33,7 +33,7 @@ list.appendChild(newListItem);
 
 const textFields = document.getElementsByTagName('input');
 
-for (let i=0; i<textFields.length; i++) {
+for (let i = 0; i < textFields.length; i++) {
     textFields[i].type = 'checkbox';
 }
 
@@ -41,9 +41,16 @@ for (let i=0; i<textFields.length; i++) {
 // Add the <button> inside the '.extra' <div>
 
 const createButton = document.createElement('button');
-
 createButton.textContent = 'Delete';
 
+const extra = document.querySelector('.extra');
+extra.appendChild(createButton);
 
 
 // 8: Remove the '.extra' <div> element from the DOM when a user clicks the 'Delete' button
+
+const extraRemove = document.querySelector('.extra');
+
+extraRemove.addEventListener( 'click', () => {
+    extraRemove.remove();
+})
