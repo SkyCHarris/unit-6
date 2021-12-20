@@ -11,8 +11,8 @@ document.querySelector('h1').style.color = "darkorange";
 // 3: Set the content of the '.desc' paragraph
 // The content should include at least one HTML tag
 
-const paragraph = document.getElementsByClassName('desc');
-paragraph.innerHTML = "This is my To-Do List! Take a look, cuz Im soooo busy";
+const paragraph = document.querySelector('.desc');
+paragraph.innerHTML = "<a href>This is my To-Do List! Take a look, cuz Im soooo busy.</a>";
 
 
 // 4: Set the class of the <ul> to 'list'
@@ -22,8 +22,10 @@ list.className = 'list';
 
 // 5: Create a new list item and add it to the <ul>
 
-const ul  = document.querySelector('ul');
 const newListItem = document.createElement('li');
+newListItem.innerHTML = "<input> Play with doggo!";
+
+list.appendChild(newListItem);
 
 
 // 6: Change all <input> elements from text fields to checkboxes
