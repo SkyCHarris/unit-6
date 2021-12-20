@@ -49,8 +49,8 @@ extra.appendChild(createButton);
 
 // 8: Remove the '.extra' <div> element from the DOM when a user clicks the 'Delete' button
 
-const extraRemove = document.querySelector('.extra');
+const container = document.querySelector('.container');
 
-extraRemove.addEventListener( 'click', () => {
-    extraRemove.remove();
+createButton.addEventListener( 'click', () => {
+    container.removeChild(extra);
 })
