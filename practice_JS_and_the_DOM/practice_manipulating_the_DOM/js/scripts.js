@@ -31,11 +31,18 @@ list.appendChild(newListItem);
 // 6: Change all <input> elements from text fields to checkboxes
 
 
+const textFields = document.getElementsByTagName('input');
 
+for (let i=0; i<textFields.length; i++) {
+    textFields[i].type = 'checkbox';
+}
 
 // 7: Create a <button> element, and set its text to 'Delete'
 // Add the <button> inside the '.extra' <div>
 
+const createButton = document.createElement('button');
+
+createButton.textContent = 'Delete';
 
 
 
