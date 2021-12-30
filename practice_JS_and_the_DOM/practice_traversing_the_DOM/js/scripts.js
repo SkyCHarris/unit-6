@@ -24,14 +24,17 @@ prevItem.style.backgroundColor = '#f36f49';
 
 // 5: Store the nested div in a variable named `banner`
 
+const banner = list.previousElementSibling;
 banner.className = 'banner';
 
 // 6: Using traversal, store the wrapper div in a variable named `wrapper`
 
+const wrapper = list.parentNode;
 wrapper.style.backgroundColor = '#fcfcfc';
 
 // 7: Using traversal, store the body in a variable named `body`
 
+const body = wrapper.parentNode;
 body.style.backgroundColor = '#f8fdf3';
 
 
