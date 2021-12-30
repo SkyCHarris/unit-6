@@ -19,6 +19,7 @@ lastItem.style.backgroundColor = '#57d6ab';
 
 // 4: Using traversal, store the second-to-last list item in a variable named `prevItem`
 
+const prevItem = lastItem.previousElementSibling;
 prevItem.style.backgroundColor = '#f36f49';
 
 // 5: Store the nested div in a variable named `banner`
