@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   ul.addEventListener('change', (e) => {
     const checkbox = e.target;
-    const listItem = checkbox.parentNode;
+    const listItem = checkbox.parentNode.parentNode;
     const checked = checkbox.checked;
 
     if (checked) {
