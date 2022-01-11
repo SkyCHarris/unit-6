@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const action = button.textContent;
       const nameActions = {
         remove: (li) => {
-          ul.removeChild(li);
+          ul.removeChild();
         },
         edit: () => {
           const span = li.firstElementChild;
